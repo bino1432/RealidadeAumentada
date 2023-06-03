@@ -1,27 +1,20 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.1/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
-    <a-scene mindar-image="imageTargetSrc: ./targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene mindar-image="./targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
-        <a-asset-item id="lula" src="https://static21.minhalojanouol.com.br/anitagaribaldi/produto/multifotos/hd/20220714164747_9303990697_DZ.png"></a-asset-item>
-        <a-asset-item id="bozo" src="https://img.elo7.com.br/product/original/433D0D8/adesivo-bolsonaro-papel-adesivo-5x5cm-100-unidades-adesivos-para-embalagens.jpg"></a-asset-item>
+        <img id="card" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.livrariaanita.com.br%2Fbotton---l-de-lula-vermelho%2Fp&psig=AOvVaw02BcJRTJLiV114e4fkX9Jc&ust=1685853962308000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPCV08alpv8CFQAAAAAdAAAAABAE" />
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
-
       <a-entity mindar-image-target="targetIndex: 0">
-        <img id="card" src="https://static21.minhalojanouol.com.br/anitagaribaldi/produto/multifotos/hd/20220714164747_9303990697_DZ.png">
-      </a-entity>
-      <a-entity mindar-image-target="targetIndex: 1">
-        <img id="card" src="https://img.elo7.com.br/product/original/433D0D8/adesivo-bolsonaro-papel-adesivo-5x5cm-100-unidades-adesivos-para-embalagens.jpg">
+        <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+        <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.005 0.005 0.005" src="#avatarModel" animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
       </a-entity>
     </a-scene>
   </body>
 </html>
-
-
