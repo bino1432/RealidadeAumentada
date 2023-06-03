@@ -8,17 +8,17 @@
   <body>
     <a-scene mindar-image="imageTargetSrc: ./targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
-        <a-asset-item id="lula" src="lula.jpg"></a-asset-item>
-        <a-asset-item id="bozo" src="bozo.jpeg"></a-asset-item>
+        <a-asset-item id="lula" src="https://static21.minhalojanouol.com.br/anitagaribaldi/produto/multifotos/hd/20220714164747_9303990697_DZ.png"></a-asset-item>
+        <a-asset-item id="bozo" src="https://img.elo7.com.br/product/original/433D0D8/adesivo-bolsonaro-papel-adesivo-5x5cm-100-unidades-adesivos-para-embalagens.jpg"></a-asset-item>
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0">
-        <img rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="https://static21.minhalojanouol.com.br/anitagaribaldi/produto/multifotos/hd/20220714164747_9303990697_DZ.png">
+        <img rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#lula">
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 1">
-        <img rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="https://img.elo7.com.br/product/original/433D0D8/adesivo-bolsonaro-papel-adesivo-5x5cm-100-unidades-adesivos-para-embalagens.jpg">
+        <img rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#bozo">
       </a-entity>
     </a-scene>
   </body>
